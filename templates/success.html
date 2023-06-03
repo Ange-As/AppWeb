@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emargement - Succes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+          }
+          
+          thead {
+            background-color: #f8f8f8;
+          }
+          
+          th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+          
+          tbody tr:hover {
+            background-color: #f1f1f1;
+          }
+          
+          tbody tr:nth-child(even) {
+            background-color: #f8f8f8;
+          }
+          
+    </style>
+</head>
+<body>
+    <h1>Emargement - Succes</h1>
+    <p>Merci d'avoir soumis votre formulaire d'emargement !</p>
+
+    
+    <table>
+        <thead>
+          <tr>
+           
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Numéro</th>
+            <th>Email</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in emargement_data %}
+          <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+
+      
+        
+    
+      
+</body>
+</html>

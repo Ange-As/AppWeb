@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+
+
+    <title>Emargement - Formulaire</title>
+</head>
+<body>
+    <h1>Emargement - Formulaire</h1>
+
+    
+<section class="section_form">
+    <form id="consultation-form" class="feed-form" action="/submit" method="post">
+      <input required="" placeholder="Nom" type="text" name="nom">
+      <input required="" placeholder="Prenom" type="text" name="prenom">
+      <input required="" placeholder="Numero de telephone" name="numero">
+      <input required="" placeholder="E-mail" type="email" name="email">
+      <button class="button_submit">Soumettre</button>
+    </form>
+  </section>
+  
+</body>
+</html>
